@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Airflow generated
+logs/
+airflow.db
+webserver_config.py
+standalone_admin_password.txt
+
+# Local generated artifacts
+*.csv
+*.json
+!dags/*.py
+
+# Environment and secrets
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*.json
+*service-account*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
