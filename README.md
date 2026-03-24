@@ -20,7 +20,7 @@ Production-style Airflow project for ingesting cryptocurrency market data from C
 - Architecture notes: [`docs/architecture.md`](/docs/architecture.md)
 - Editable diagram: 
 
-![Crypto Pipeline Architecture](/docs/images/crypto_pipeline_airflow.drawio.png)
+![Crypto Pipeline Architecture](/docs/crypto_pipeline_airflow.drawio.png)
 
 ## Execution Screenshots (Proof of Concept)
 
