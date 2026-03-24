@@ -15,6 +15,18 @@ Production-style Airflow project for ingesting cryptocurrency market data from C
 - Schedule: every 10 minutes
 - Flow: `CoinGecko API -> local worker file -> GCS -> BigQuery`
 
+## Architecture and diagrams
+
+- Architecture notes: [`docs/architecture.md`](docs/architecture.md)
+- Editable diagram: [`docs/crypto_pipeline_airflow.drawio`](docs/crypto_pipeline_airflow.drawio)
+- Exported images folder: [`docs/images/`](docs/images/)
+
+Place exported PNG/SVG diagrams in `docs/images/` and embed them here:
+
+```md
+![Crypto Pipeline Architecture](docs/images/crypto_pipeline_airflow.png)
+```
+
 ## Project structure
 
 ```text
@@ -24,7 +36,9 @@ crypto-pipeline-airflow/
 ├─ tests/
 │  └─ test_crypto_exchange_pipeline.py
 ├─ docs/
-│  └─ architecture.md
+│  ├─ architecture.md
+│  ├─ crypto_pipeline_airflow.drawio
+│  └─ images/
 ├─ .github/workflows/ci.yml
 ├─ .env.example
 ├─ .gitignore
