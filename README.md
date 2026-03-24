@@ -17,15 +17,18 @@ Production-style Airflow project for ingesting cryptocurrency market data from C
 
 ## Architecture and diagrams
 
-- Architecture notes: [`docs/architecture.md`](docs/architecture.md)
-- Editable diagram: [`docs/crypto_pipeline_airflow.drawio`](docs/crypto_pipeline_airflow.drawio)
-- Exported images folder: [`docs/images/`](docs/images/)
+- Architecture notes: [`docs/architecture.md`](/docs/architecture.md)
+- Editable diagram: 
 
-Place exported PNG/SVG diagrams in `docs/images/` and embed them here:
+![Crypto Pipeline Architecture](/docs/images/crypto_pipeline_airflow.png)
 
-```md
-![Crypto Pipeline Architecture](docs/images/crypto_pipeline_airflow.png)
-```
+## Execution Screenshots (Proof of Concept)
+
+| Airflow DAG Overview | Google Cloud Composer | GCS Buckets (Data Lake) |
+| :---: | :---: | :---: |
+| ![DAG Overview](/docs/images/airflow_dag_overview.jpg) | ![Composer](/docs/images/composer_overview.jpg) | ![GCS Buckets](/docs/images/pipeline_buckets.jpg) |
+
+> **Note:** These screenshots demonstrate the successful orchestration and data storage in the production environment.
 
 ## Project structure
 
